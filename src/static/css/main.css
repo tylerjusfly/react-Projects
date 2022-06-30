@@ -1,5 +1,5 @@
 * {
-    transition: background-color 0.9s ease, color 1s ease;
+    transition: background-color 0.5s ease, color 1s ease;
   }
 
 body{
@@ -7,6 +7,8 @@ body{
     color: #fff;
     font-family: 'Trebuchet MS','Lucida Sans', Arial;
 }
+
+@media (min-width: 840px) {
 
 /* Body  Styles */
 .container{
@@ -22,11 +24,12 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /* padding-bottom: 3rem; */
 }
 .section-text{
     display: grid;
     place-content: center;
-    /* margin: auto; */
+    margin-top: 5rem;
 }
 .section-text .pacify{
     font-family: Inria Sans;
@@ -58,3 +61,7 @@ body{
 .container .sm-pacify{
     display: none;
 }
+
+}  
+
+/* END OF BIG SCREEN */

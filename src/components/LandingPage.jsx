@@ -1,5 +1,5 @@
 import '../static/css/main.css'
-import Naspac from '../static/img/naspac.jpg'  //importing locally stored image
+import Naspac from '../static/img/pacmic.jpg'  //importing locally stored image
 
 
   export default function LandingPage(){
