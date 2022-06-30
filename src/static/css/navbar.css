@@ -1,0 +1,76 @@
+/* Switch To Dark Mode Design */
+.switch {
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .switch div {
+    position: relative;
+    display: block;
+    background: #eee;
+    width: 30px;
+    border-radius: 50px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .fa-adjust {
+    transform: rotate(180deg);
+  }
+  .switch input {
+    display: none;
+  }
+  .slider {
+    background-color: #999;
+    transition: 0.4s;
+    border-radius: 34px;
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    position: relative;
+  }
+  input:checked + .slider {
+    transform: translateX(8px);
+  }
+
+  /* end of Switch Design */
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+.logo-name > img{
+    /* Tupac Shakur */
+    width: 300;
+    vertical-align: middle;
+    /* background-image: var(--white); */
+}
+.search-box{
+    align-items: center;
+    align-self: center;
+}
+.search-box > input{
+    height: 50;
+    font-size: 15px;
+    padding-left: 13px;
+    vertical-align: middle;
+    background-color: var(--hashtab);
+    color: var( --text );
+    border: none;
+    border-radius: 3px;
+}
+.search-box > button{
+    height: 45;
+    width: 100;
+    font-size: 1em;
+    vertical-align: middle;
+    margin-left: 1em;
+    border-radius: 3px;
+    border: none;
+    background-color: var(--text);
+    color: var(--background);
+    cursor: pointer;
+}
