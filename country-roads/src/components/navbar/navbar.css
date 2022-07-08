@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'poppins', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav{
+    background-color: #111;
+    height: 80px;
+    display: flex;
+    padding: 7px 36px;
+    box-shadow: rgb(29, 26, 92);
+}
+
+.navbar--logo{
+    max-width: 90px;
+}

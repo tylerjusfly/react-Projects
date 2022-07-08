@@ -1,0 +1,22 @@
+.card{
+    font-size: 13px;
+    width: 300px;
+    padding: 20px;
+
+}
+.card--image{
+    width: 100%;
+    border-radius: 5px;
+}
+.card--stats{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.card--guitar{
+    width: 35px;
+}
+.bolderized{
+    font-weight: 700;
+}

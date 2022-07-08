@@ -1,0 +1,23 @@
+section{
+    padding: 20px;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgb(70, 141, 81);
+    border-bottom: 2px dotted salmon;
+}
+
+.hero--photo{
+    max-width: 500px;
+    align-self: center;
+
+}
+.hero--title{
+    margin-bottom: 16px;
+
+}
+.hero--text{
+    margin-top: 0;
+
+}

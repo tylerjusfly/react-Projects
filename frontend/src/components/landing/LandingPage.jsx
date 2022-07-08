@@ -1,5 +1,5 @@
-import '../static/css/main.css'
-import Naspac from '../static/img/pacmic.jpg'  //importing locally stored image
+import './main.css'
+import PacMic from '../../static/img/pacmic.jpg'  //importing locally stored image
 
 
   export default function LandingPage(){
@@ -10,7 +10,7 @@ import Naspac from '../static/img/pacmic.jpg'  //importing locally stored image
           <div className="poem-title">The 🌹Rose That Grew From Concrete</div>
           </div>
       <section className="image-container">
-          <img src={Naspac} alt="pac Holding A mic"/>
+          <img src={PacMic} alt="pac Holding A mic"/>
       </section>
           <section className="section-text">
               <div className="pacify">PACIFY </div>

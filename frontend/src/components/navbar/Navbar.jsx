@@ -1,5 +1,5 @@
-import '../static/css/navbar.css'
-import ShakurLogo from '../static/img/shakurLogo.png'
+import './navbar.css'
+import ShakurLogo from '../../static/img/shakurLogo.png'
 import { BsSearch } from "react-icons/bs";
 
 export default function NavBar(){

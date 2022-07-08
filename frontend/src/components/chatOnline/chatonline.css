@@ -1,0 +1,37 @@
+.Chatonline{
+    margin-top: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+
+}
+.chat-online-friend{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+.chat-online-friend:hover{
+    background-color: blanchedalmond;
+    color: black;
+    border-radius: 3px;
+}
+.chat-online-img-container{
+    position: relative;
+    margin: 10px;
+}
+.chat-online-img-container .chat-online-img{
+    width: 38px;
+    height: 38px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.chat-online-img-container .chat-online-badge{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: aqua;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+}
