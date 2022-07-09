@@ -1,8 +1,9 @@
-Create a conversation table
+### React Projects 
 
-will have an array of members [ id of users] => row
+This are projects i built while learning react , just a bunch of projects that catches my interest.
 
-create a message table 
-with row of conversation Id
-row of senderId
-row of text
+```
+[x] A web app of country songs and lyrics
+[x] A frontend project about Tupac musics
+
+```
