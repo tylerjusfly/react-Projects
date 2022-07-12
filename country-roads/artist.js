@@ -1,4 +1,4 @@
-[
+export default [
   {
     "artist_names": "Luke Combs",
     "image_url": "https://images.genius.com/e42fd08ccb70751a97405ef1617ca1ef.1000x1000x1.jpg",

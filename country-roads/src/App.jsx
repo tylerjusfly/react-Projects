@@ -1,33 +1,67 @@
-import { Card } from "./components/card/Card"
-import { HeroTab } from "./components/hero/Hero"
-import { NavBar } from "./components/navbar/Navbar"
+import { Card } from "./components/card/Card";
+import { HeroTab } from "./components/hero/Hero";
+import { NavBar } from "./components/navbar/Navbar";
+import artistData from "../artist.js";
+import pics from "./statics/images/Lukecombs.png";
 
 export const App = () => {
-    return(
-        <>
-        <NavBar/>
-        <HeroTab/>
-        <Card 
-        name="Luke Combs"
-        image = "https://images.genius.com/e42fd08ccb70751a97405ef1617ca1ef.1000x1000x1.jpg"
-        songTitle = "Forever After All"
-        release_date = "March 30, 2010"
-        />
-        <Card  
-        name="Lucinda Williams"
-        image= "https://images.genius.com/634feb9870ddec496e07341dc2526f5d.400x399x1.jpg"
-        songTitle= "2 Kool 2 Be 4-Gotten"
-        />
-        <Card  
-        name="Keith Whitley"
-        image= "https://images.genius.com/c985db3e64dc9a00682083c79d00900d.1000x1000x1.jpg"
-        songTitle="I Never Go Around Mirrors"
-        />
-        <Card  
-        name="Alan Jackson"
-        image = "https://images.genius.com/cdcd13c9600a460acfd912d66aaac109.268x265x1.png"
-        songTitle = "Where Were You (When The World Stopped Turning)"
-        />
-        </>
-    )
-}
+  const cardElement = artistData.map((data) => {
+    return (
+      <Card
+        image={data.image_url}
+        alt={data.artist_names}
+        name={data.artist_names}
+        songTitle={data.title}
+        date={data.release_date}
+        verified={data.verified}
+      />
+    );
+  });
+
+  return (
+    <>
+      <NavBar />
+      <HeroTab />
+      {cardElement}
+    </>
+  );
+};
+
+// import { Joke } from "./components/joke/Joke"
+
+// export const App = () => {
+//     return(
+//         <>
+//         <Joke
+//         joke = 'dicta saepe voluptas maiores eveniet amet quaerat fugit vitae, odio totam sit.'
+//         isPun = {true}
+//         downvotes = {4}
+//         comments ={['nice', 'what!!!']}
+//         />
+//         <Joke
+//         setup = ' Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil quis rem ratione'
+//         joke = 'dicta saepe voluptas maiores eveniet amet quaerat fugit vitae, odio totam sit.'
+//         isPun = {true}
+//         downvotes = {5}
+//         />
+//         <Joke
+//         setup = ' Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil facere porro'
+//         joke = 'dicta saepe voluptas maiores eveniet amet quaerat fugit vitae, odio totam sit.'
+//         isPun = {false}
+//         downvotes = {10}
+//         />
+//         <Joke
+//         setup = ' Lorem, ipsum dolor sit amet elit. Nihil quis rem ratione fconsectetur adipisicing '
+//         joke = 'dicta saepe voluptas maiores eveniet amet quaerat fugit vitae, odio totam sit.'
+//         isPun = {true}
+//         downvotes = {0}
+//         />
+//         <Joke
+//         setup = ' Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil facere porro'
+//         joke = 'dicta saepe voluptas maiores eveniet amet quaerat fugit vitae, odio totam sit.'
+//         isPun = {false}
+//         downvotes = {10}
+//         />
+//         </>
+//     )
+// }
