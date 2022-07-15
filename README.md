@@ -21,4 +21,5 @@ This are projects i built while learning react , just a bunch of projects that c
 
 ### Learnt 
 [x] Props
+
 [x] Jsx
