@@ -19,5 +19,12 @@ section{
 }
 .hero--text{
     margin-top: 0;
+}
 
+
+@media (max-width : 500px) {
+    .hero--photo{
+        width: 300px;
+    }
+    
 }
