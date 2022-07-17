@@ -22,9 +22,18 @@ section{
 }
 
 
-@media (max-width : 500px) {
+@media (max-width : 768px) {
     .hero--photo{
         width: 300px;
+    }
+
+    .hero--title{
+        font-size: 16px;
+    }
+
+    .hero--text{
+        font-size: 14px;
+
     }
     
 }
