@@ -19,7 +19,7 @@ export const App = () => {
     <>
       <NavBar />
       <HeroTab />
-      {/* <div className="card---props">{cardElement}</div> */}
+      <div className="card---props">{cardElement}</div>
     </>
   );
 };

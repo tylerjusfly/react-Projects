@@ -25,3 +25,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+
+@media (max-width : 903px) {
+    .card{
+      width: 250px;
+    }
+    
+}
+
+@media (max-width : 748px) {
+  .card{
+    width: 200px;
+    padding: 10px;
+
+  }
+  
+}
