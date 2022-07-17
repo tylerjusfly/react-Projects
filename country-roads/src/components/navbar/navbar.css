@@ -9,6 +9,7 @@ body{
 nav{
     background-color: #111;
     height: 80px;
+    width: auto;
     display: flex;
     padding: 7px 36px;
     box-shadow: rgb(29, 26, 92);
@@ -16,4 +17,8 @@ nav{
 
 .navbar--logo{
     max-width: 90px;
+}
+
+@media (max-width : 700px) {
+    
 }
