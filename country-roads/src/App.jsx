@@ -18,8 +18,8 @@ export const App = () => {
   return (
     <>
       <NavBar />
-      {/* <HeroTab />
-      <div className="card---props">{cardElement}</div> */}
+      <HeroTab />
+      {/* <div className="card---props">{cardElement}</div> */}
     </>
   );
 };
