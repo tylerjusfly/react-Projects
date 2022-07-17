@@ -38,7 +38,11 @@
   .card{
     width: 200px;
     padding: 10px;
+  }
 
+  .card---props {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   
 }
