@@ -1,26 +1,19 @@
-*{
-    box-sizing: border-box;   
-}
+@import './constants';
+
+
 body{
     margin: 0;
     font-family: 'Trebuchet MS', 'poppins', 'Lucida Sans', Arial, sans-serif;
 }
 
 .nav--bar{
-    background-color: #111;
+    background-color: $background-color;
     height: 80px;
     display: flex;
     padding: 7px 36px;
     box-shadow: rgb(29, 26, 92);
-}
 
-.navbar--logo{
-    max-width: 90px;
-}
-
-/* @media (max-width : 903px) {
-    nav{
-
+    .navbar--logo{
+        max-width: 90px;
     }
-    
-} */
+}

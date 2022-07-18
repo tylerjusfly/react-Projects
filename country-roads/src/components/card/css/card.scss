@@ -1,0 +1,84 @@
+@import '../../navbar/css/constants';
+
+$font-sizes : (
+    "regular" : 13px,
+);
+
+@function font-size($size){
+    @return map-get($font-sizes , $size )
+}
+
+@mixin displayFlex(){
+    display: flex;
+    align-items: center;
+};
+
+.card{
+    font-size: font-size(regular);
+    width: 300px;
+    padding: 20px;
+
+    // Nesting and interpolation
+    #{&}--image{
+        width: 100%;
+        border-radius: 5px;
+    }
+    #{&}--stats {
+        @include displayFlex();
+        gap: 9px;
+      }
+      #{&}--guitar {
+        width: 35px;
+      }
+      .bolderized {
+        font-weight: 700;
+      }
+    }
+    
+    .card---props {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+ @include mobile{
+  .card{
+    width: 200px;
+    padding: 10px;
+  }
+
+  .card---props {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+
+ }
+
+ @include in--btw(769px, 910px){
+  .card---props {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+
+ }
+  
+
+  
+
+  
+
+  
+  
+//   @media (max-width : 903px) {
+//       .card{
+//         width: 250px;
+//       }
+      
+//   }
+  
+//   @media (max-width : 748px) {
+   
+    
+//   }

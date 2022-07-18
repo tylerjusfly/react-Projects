@@ -1,0 +1,65 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card {
+  font-size: 13px;
+  width: 300px;
+  padding: 20px;
+}
+
+.card .card--image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card .card--stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 9px;
+}
+
+.card .card--guitar {
+  width: 35px;
+}
+
+.card .bolderized {
+  font-weight: 700;
+}
+
+.card---props {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 200px;
+    padding: 10px;
+  }
+  .card---props {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 950px) {
+  .card---props {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+}
+/*# sourceMappingURL=card.css.map */

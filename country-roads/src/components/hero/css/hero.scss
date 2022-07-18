@@ -1,0 +1,44 @@
+@import '../../navbar/css/constants';
+// mixins
+
+@mixin display-row-column($direction){
+    display: flex;
+    flex-direction: $direction;
+};
+
+section{
+    padding: 20px;
+}
+
+.hero{
+    @include display-row-column(column);
+    box-shadow: rgb(70, 141, 81);
+    border-bottom: 2px dotted salmon;
+
+    .hero--photo{
+        max-width: 500px;
+        align-self: center;
+    }
+    .hero--title{
+        margin-bottom: 16px;
+    }
+    .hero--text{
+    margin-top: 0;
+}
+
+}
+
+@include mobile {
+    .hero--photo{
+        width: 300px;
+    }
+
+    .hero--title{
+        font-size: 16px;
+    }
+
+    .hero--text{
+        font-size: 14px;
+    }
+    
+}

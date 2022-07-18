@@ -1,4 +1,4 @@
-import './hero.css'
+import './css/hero.css'
 import heroImg from '../../statics/images/hero-tab-logo.png'
 
 export const HeroTab = () => {

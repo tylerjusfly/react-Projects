@@ -1,4 +1,4 @@
-import "./card.css";
+import "./css/card.css";
 import LukeCombs from "../../statics/images/Lukecombs.png";
 import guitarFav from '../../favicon.svg'
 import Verifiedsvg from '../../statics/images/verified.svg'

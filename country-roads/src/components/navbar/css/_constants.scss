@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;   
+}
+
+$background-color : #111;
+$mobile : 768px;
+
+
+@mixin mobile {
+    @media (max-width : $mobile ) {
+        @content
+    }
+}
+
+@mixin in--btw($start, $end) {
+    @media only screen and (min-width: $start) and (max-width: $end){
+        @content
+    }
+}

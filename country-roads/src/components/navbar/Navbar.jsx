@@ -1,4 +1,4 @@
-import './navbar.css'
+import './css/navbar.css'
 import NavLogo from '../../statics/images/countryLogo.jpg'
 
 export const NavBar = () => {
