@@ -39,7 +39,7 @@
       grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media (max-width: 398px) {
+@media (max-width: 469px) {
   .card---props {
     display: -ms-grid;
     display: grid;
@@ -49,7 +49,7 @@
   }
 }
 
-@media only screen and (min-width: 399px) and (max-width: 768px) {
+@media only screen and (min-width: 470px) and (max-width: 768px) {
   .card {
     width: 200px;
     padding: 10px;
