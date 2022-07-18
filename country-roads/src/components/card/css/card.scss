@@ -40,8 +40,17 @@ $font-sizes : (
       grid-template-columns: 1fr 1fr 1fr;
     }
 
+    @include mobile(398px){
+      .card---props {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr ;
+      }
 
- @include mobile{
+    }
+
+
+ @include in--btw(399px, $mobile){
   .card{
     width: 200px;
     padding: 10px;
@@ -64,21 +73,3 @@ $font-sizes : (
 
  }
   
-
-  
-
-  
-
-  
-  
-//   @media (max-width : 903px) {
-//       .card{
-//         width: 250px;
-//       }
-      
-//   }
-  
-//   @media (max-width : 748px) {
-   
-    
-//   }

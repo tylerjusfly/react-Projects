@@ -39,7 +39,17 @@
       grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 398px) {
+  .card---props {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 399px) and (max-width: 768px) {
   .card {
     width: 200px;
     padding: 10px;
@@ -53,7 +63,7 @@
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 950px) {
+@media only screen and (min-width: 769px) and (max-width: 910px) {
   .card---props {
     display: -ms-grid;
     display: grid;

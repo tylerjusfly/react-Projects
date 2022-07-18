@@ -6,8 +6,8 @@ $background-color : #111;
 $mobile : 768px;
 
 
-@mixin mobile {
-    @media (max-width : $mobile ) {
+@mixin mobile($width) {
+    @media (max-width : $width ) {
         @content
     }
 }
