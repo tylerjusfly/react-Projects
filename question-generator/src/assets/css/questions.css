@@ -30,15 +30,15 @@ main {
   border: none;
   font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS";
   color: #f5deb3;
-  background-color: #511fb5;
+  background-color: #700cb3;
 }
 .questions .q--button:hover {
   color: #956814;
-  background-color: #e4daf9;
+  background-color: #e5c3fb;
 }
 
 .question--card {
-  background-color: #511fb5;
+  background-color: #700cb3;
   color: #f5deb3;
   margin-top: 4rem;
   padding: 40px;
@@ -53,7 +53,7 @@ main {
   bottom: 1;
   right: 0;
   background-color: #f5deb3;
-  color: #511fb5;
+  color: #700cb3;
   font-size: 0.8rem;
   font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS";
   padding: 10px;
