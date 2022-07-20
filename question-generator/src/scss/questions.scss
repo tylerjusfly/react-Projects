@@ -49,6 +49,18 @@ main{
         font-size: 1.1rem;
         font-weight: 600;
     }
+    .Q--type{
+        position: fixed;
+        bottom: 1;
+        right: 0;
+        background-color: $Second--color;
+        color: $Primary--color;
+        font-size: 0.8rem;
+        font-family: $font-family;
+        padding: 10px;
+        width: 5rem;
+        
+    }
 }
 
 

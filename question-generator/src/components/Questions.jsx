@@ -3,29 +3,28 @@ import { banki } from '../banki'
 import React from 'react';
 
 export const Questions = () =>{
-  const [question, setQuestion] = React.useState([])
+  const [question, setQuestion] = React.useState({
+    question: "Welcome to the Web Development Question Generator, You can pass in a Question Type or Just Generate at random. Your choice Dev !",
+    type: "Message",
+  })
 
     function generate(){
         const bankiQuestions = banki.questions
         const random = Math.floor(Math.random() * bankiQuestions.length);
         let randomQ = bankiQuestions[random]
-        console.log(randomQ)
+        
         //passing a function to state setter with parameter of previous state
-       setQuestion([randomQ.question, randomQ.type])
+       setQuestion(randomQ)
       }
       
   return (    
     <main>
     <div className="questions">
-        <input 
-        type="text"  
-        className='q--input'
-        placeholder='Top-text'
-        />
+
         <input 
         type="text" 
         className='q--input'
-        placeholder='Bottom-text'
+        placeholder='Question Type'
         />
         <button 
         onClick={generate} 
@@ -37,7 +36,8 @@ export const Questions = () =>{
     </div>
 
     <div className="question--card">
-      <p className='Q--text'>{question}</p>
+      <p className='Q--text'>{question.question}</p>
+      <p className="Q--type">{question.type}</p>
     </div>
     </main>
   )
