@@ -1,0 +1,27 @@
+@import './config';
+
+body{
+    color: $textual-color;
+    background-color: $Second--color;
+}
+h1, h2, h3 {
+    font-size: 20px;
+}
+
+.Nav--Bar{
+    background-color: $Primary--color;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 7px 36px;
+    height: 90px;
+
+    .nav--img{
+        height: 100%;
+        //vertical-align: middle;
+    }
+    .nav--text{
+        color: $Second--color;
+    }
+}
+

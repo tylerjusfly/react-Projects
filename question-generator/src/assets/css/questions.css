@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.questions {
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.questions .q--input {
+  height: 40px;
+  text-indent: 7px;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS";
+}
+.questions .q--button {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 2px;
+  border: none;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS";
+  color: #f5deb3;
+  background-color: #511fb5;
+}
+.questions .q--button:hover {
+  color: #956814;
+  background-color: #e4daf9;
+}
+
+.question--card {
+  background-color: #511fb5;
+  color: #f5deb3;
+  margin-top: 4rem;
+  padding: 40px;
+  border-radius: 4px;
+}
+.question--card .Q--text {
+  font-size: 1.1rem;
+  font-weight: 600;
+}/*# sourceMappingURL=questions.css.map */
