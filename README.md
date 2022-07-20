@@ -36,7 +36,9 @@ Shoutout to 100Devs And Scrimba And also to my 100 devs favorites
 
 - [@fullStackRacc ](https://github.com/fullStackRacc)
 
-![questions](https://user-images.githubusercontent.com/53145644/180087192-9363ddfd-9477-48bf-9a17-a401c820ce5b.png)
+<p align="center">    
+  ![Questions generator](https://user-images.githubusercontent.com/53145644/180088518-9f85ebdd-d0e3-4f6f-9894-6efaa0bebc5d.png)
+  </p>
 
 ### Built With 
 
