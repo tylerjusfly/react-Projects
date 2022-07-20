@@ -30,8 +30,14 @@ the idea was gotten from `https://github.com/20jasper/interview-question-api` ju
 
 Shoutout to 100Devs And Scrimba And also to my 100 devs favorites
 
+- [@20jasper](https://github.com/20jasper)
+
+- [TheAmazinRaven ](https://github.com/TheAmazinRaven)
+
+- [@fullStackRacc ](https://github.com/fullStackRacc)
+
 
 ### Built With 
 
 - ReactJs
--Css
+- Css
