@@ -45,8 +45,10 @@ main {
   border-radius: 4px;
 }
 .question--card .Q--text {
+  text-align: center;
   font-size: 1.1rem;
   font-weight: 600;
+  padding-bottom: 0.8rem;
 }
 .question--card .Q--type {
   position: fixed;
@@ -58,4 +60,29 @@ main {
   font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS";
   padding: 10px;
   width: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .question--card {
+    margin: 4rem auto;
+  }
+  .question--card .Q--text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .question--card .Q--text {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 260px) {
+  .questions .q--input {
+    font-size: 0.8rem;
+  }
+  .questions .q--button {
+    font-size: 0.8rem;
+  }
+  .question--card .Q--text {
+    font-size: 0.8rem;
+  }
 }/*# sourceMappingURL=questions.css.map */

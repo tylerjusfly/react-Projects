@@ -26,4 +26,11 @@ h1, h2, h3 {
 }
 .Nav--Bar .nav--text {
   color: #f5deb3;
+}
+
+@media screen and (max-width: 400px) {
+  .Nav--Bar .nav--text {
+    font-size: 1rem;
+    border: 1px solid red;
+  }
 }/*# sourceMappingURL=navbar.css.map */

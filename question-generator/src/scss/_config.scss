@@ -10,3 +10,15 @@ $font-family : 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
 $Primary--color : #700cb3;
 $Second--color : #f5deb3;
 $textual-color : #000;
+
+@mixin LargeScreens($screenSize){
+    @media screen and (min-width : $screenSize) {
+        @content
+    }
+}
+
+@mixin smallScreens($screenSize){
+    @media screen and (max-width : $screenSize) {
+        @content
+    }
+}

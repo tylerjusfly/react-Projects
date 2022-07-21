@@ -46,8 +46,10 @@ main{
     padding: 40px;
     border-radius: 4px;
     .Q--text{
+        text-align: center;
         font-size: 1.1rem;
         font-weight: 600;
+        padding-bottom: 0.8rem;
     }
     .Q--type{
         position: fixed;
@@ -63,4 +65,37 @@ main{
     }
 }
 
+@include LargeScreens(768px){
+    .question--card{
+        margin: 4rem auto;
+        //max-width: 900px;
+        .Q--text{
+            text-align: center;
+        }
+    }
 
+}
+
+@include smallScreens(400px){
+    .question--card{
+        .Q--text{
+            font-size: 1rem;
+        }
+    }
+}
+
+@include smallScreens(260px){
+    .questions{
+        .q--input{
+            font-size: 0.8rem;
+        }
+        .q--button{
+            font-size: 0.8rem;
+        }
+    }
+    .question--card{
+        .Q--text{
+            font-size: 0.8rem;
+        }
+    }
+}
