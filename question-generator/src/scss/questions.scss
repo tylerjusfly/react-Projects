@@ -1,0 +1,105 @@
+@import './config';
+
+@mixin CenterTags($gap, $direction){
+    display: flex;
+    gap: $gap;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.questions{
+    @include CenterTags(15px, row);
+
+    .q--input{
+        height: 40px;
+        text-indent: 7px;
+        font-family: $font-family;
+    }
+
+    .q--button{
+        font-size: 15px;
+        font-weight: 700;
+        padding: 8px;
+        cursor: pointer;
+        border-radius: 2px;
+        border: none;
+        font-family: $font-family;
+        color: $Second--color;
+        background-color: $Primary--color;
+        &:hover{
+            color: darken($Second--color, 50%);
+            background-color: lighten($Primary--color, 50%);
+        }
+    }
+}
+
+.question--card{
+    background-color: $Primary--color;
+    color: $Second--color;
+    margin-top: 4rem;
+    padding: 40px;
+    border-radius: 4px;
+    .Q--text{
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 600;
+        padding-bottom: 0.8rem;
+    }
+    .Q--type{
+        position: fixed;
+        bottom: 1;
+        right: 0;
+        background-color: $Second--color;
+        color: $Primary--color;
+        font-size: 0.8rem;
+        font-family: $font-family;
+        padding: 10px;
+        width: 5rem;
+    }
+    .Q-image{
+        width: 30px;
+        cursor: pointer;
+        padding-bottom: 10px;
+    }
+}
+
+@include LargeScreens(768px){
+    .question--card{
+        margin: 4rem auto;
+        //max-width: 900px;
+        .Q--text{
+            text-align: center;
+        }
+    }
+
+}
+
+@include smallScreens(400px){
+    .question--card{
+        .Q--text{
+            font-size: 1rem;
+        }
+    }
+}
+
+@include smallScreens(260px){
+    .questions{
+        .q--input{
+            font-size: 0.8rem;
+        }
+        .q--button{
+            font-size: 0.8rem;
+        }
+    }
+    .question--card{
+        .Q--text{
+            font-size: 0.8rem;
+        }
+    }
+}

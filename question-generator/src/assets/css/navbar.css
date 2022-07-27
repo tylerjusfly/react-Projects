@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #000;
+  background-color: #f5deb3;
+}
+
+h1, h2, h3 {
+  font-size: 20px;
+}
+
+.Nav--Bar {
+  background-color: #700cb3;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 7px 36px;
+  height: 90px;
+}
+.Nav--Bar .nav--img {
+  height: 100%;
+}
+.Nav--Bar .nav--text {
+  color: #f5deb3;
+}
+
+@media screen and (max-width: 400px) {
+  .Nav--Bar .nav--text {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=navbar.css.map */

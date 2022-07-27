@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.questions {
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.questions .q--input {
+  height: 40px;
+  text-indent: 7px;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS";
+}
+.questions .q--button {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 2px;
+  border: none;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS";
+  color: #f5deb3;
+  background-color: #700cb3;
+}
+.questions .q--button:hover {
+  color: #956814;
+  background-color: #e5c3fb;
+}
+
+.question--card {
+  background-color: #700cb3;
+  color: #f5deb3;
+  margin-top: 4rem;
+  padding: 40px;
+  border-radius: 4px;
+}
+.question--card .Q--text {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-bottom: 0.8rem;
+}
+.question--card .Q--type {
+  position: fixed;
+  bottom: 1;
+  right: 0;
+  background-color: #f5deb3;
+  color: #700cb3;
+  font-size: 0.8rem;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS";
+  padding: 10px;
+  width: 5rem;
+}
+.question--card .Q-image {
+  width: 30px;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .question--card {
+    margin: 4rem auto;
+  }
+  .question--card .Q--text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .question--card .Q--text {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 260px) {
+  .questions .q--input {
+    font-size: 0.8rem;
+  }
+  .questions .q--button {
+    font-size: 0.8rem;
+  }
+  .question--card .Q--text {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=questions.css.map */
