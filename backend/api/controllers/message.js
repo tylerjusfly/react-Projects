@@ -27,3 +27,16 @@ exports.getMessage = async(req, res, next) => {
       }
 
 }
+
+exports.getAllMessage = async(req, res, next) => {
+
+  try {
+      const SqlSelect = "SELECT * FROM messageTable"
+      const response = await db.query(SqlSelect)
+      
+      res.json({status : "success", result : response.rows})
+    } catch (error) {
+      return next(error)
+    }
+
+}
