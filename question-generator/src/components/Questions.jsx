@@ -63,7 +63,7 @@ export const Questions = () =>{
         </button>
 
     </div>
-      <h1>showing tab for {question.textQuery}</h1>
+      <h1>showing questions for {question.textQuery}</h1>
     <div className="question--card">
       <Star isFilled = {question.isFavorite} onClick = {switchFavorite} />
       <p className='Q--text'>{question.question}</p>
