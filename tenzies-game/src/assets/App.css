@@ -19,8 +19,18 @@ main{
   height: 500px;
   max-width: 600px;
   border-radius: 5px;
-
 }
+/* .title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+.game--plan{
+  text-align: center;
+  /* width: 240px; */
+}
+
 .die-container{
   display: grid;
   /* grid-template: auto auto / repeat(5 / 1fr); */
